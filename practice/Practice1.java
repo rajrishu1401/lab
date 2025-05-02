@@ -1,3 +1,4 @@
+
 public class Practice1 {
 
     int s1;
