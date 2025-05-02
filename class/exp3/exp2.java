@@ -1,4 +1,3 @@
-
 public class Customer {
     private double balance=0;
     public void addBalance(double amount){

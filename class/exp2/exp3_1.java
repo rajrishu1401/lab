@@ -1,10 +1,10 @@
 import java.util.*;
 
-public class exp3_1 {
+public class exp1 {
     int arr[];
     int size;
 
-    exp3_1(int size){
+    exp1(int size){
         this.size=size;
         this.arr=new int[size];
         this.addNum();
@@ -19,33 +19,26 @@ public class exp3_1 {
     }
 
     public void zeroATLast(){
-        int index=-1;
+        int p=-1;
         for(int i=0;i<this.size;i++){
-            if(index==-1){
-                if(arr[i]==0){
-                    index=i;
-                }
-            }else if(arr[i]!=0){
-                arr[index]=arr[i];
+            if(this.arr[i]==0&&p==-1){
+                p=i;
+            } else if(this.arr[i]!=0&&p!=-1){
+                arr[p]=arr[i];
                 arr[i]=0;
-                index=i;
+                p++;
             }
-            
-
         }
-    }
-    public void display(){
-        for(int i:this.arr){
-            System.out.print(i);
-        }
+        System.out.println("array:");
+        for (int i = 0; i < this.size; i++)
+            System.out.print(this.arr[i]);
     }
 
     public static void main(String arg[]){
         Scanner scanner=new Scanner(System.in);
         System.out.println("enter lenght of arr:");
-        exp3_1 ojb=new exp3_1(scanner.nextInt());
+        exp1 ojb=new exp1(scanner.nextInt());
         ojb.zeroATLast();
-        ojb.display();
         
     }
 }

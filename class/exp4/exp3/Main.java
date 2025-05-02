@@ -7,11 +7,11 @@ public class Main{
 		
 		for (Person person : persons) {
             person.displayInfo();
-            if (person instanceof Professor) {
-                ((Professor) person).conductLecture();
-            } else if (person instanceof GraduateStudent) {
-                ((GraduateStudent) person).submitThesis();
-            }
+            // if (person instanceof Professor) {
+            //     ((Professor) person).conductLecture();
+            // } else if (person instanceof GraduateStudent) {
+            //     ((GraduateStudent) person).submitThesis();
+            // }
         }
 	}
 }

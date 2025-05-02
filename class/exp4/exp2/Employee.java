@@ -23,6 +23,3 @@ public class Employee {
         this.salary=this.salary+perSal;
     }
 }
-
-
-

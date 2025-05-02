@@ -1,4 +1,3 @@
-
 public class Club {
     static String clubName="Jetha ke Jabaaj";
     String memberName;
